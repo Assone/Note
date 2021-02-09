@@ -1,4 +1,5 @@
 ---
+sidebar: false
 glossary:
   DOM: Document Object Object, 文档对象模型。
   AJAX: Asynchronous JavaScript And XML，异步的JavaScript和XML。无需重新加载页面的情况下发送请求给服务器，接受并使用从服务器发来的数据。
@@ -7,4 +8,4 @@ glossary:
 
 # Glossary
 
-<!-- <Glossary :terms="$frontmatter.terms" /> -->
+<Glossary :terms="$frontmatter.glossary"/>

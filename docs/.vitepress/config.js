@@ -8,8 +8,6 @@ module.exports = {
   title: '杉木的小破站',
   description: 'Be a student at ten times the speed.',
 
-  dest: './../../../',
-
   markdown: {
     anchor: { permalink: false },
     lineNumbers: true,
@@ -39,6 +37,10 @@ module.exports = {
         text: 'Programing',
         link: '/programing/',
         activeMatch: '^/programing/',
+      },
+      {
+        text: 'Glossary',
+        link: '/GLOSSARY',
       },
     ],
 
