@@ -16,9 +16,17 @@ module.exports = {
       const patterns = require('./plugins/glossary-patterns');
       const container = require('./plugins/container');
       const mermaid = require('./plugins/mermaid');
+      const flowChart = require('./plugins/flowChart');
 
-      container(md);
-      md.use(mermaid);
+      md.use(require('markdown-it-footnote'))
+        .use(require('markdown-it-mark'))
+        .use(require('markdown-it-sup'))
+        .use(require('markdown-it-sub'))
+        .use(require('markdown-it-ins'))
+        .use(require('@iktakahiro/markdown-it-katex'))
+        .use(mermaid)
+        .use(flowChart)
+        .use(container);
       patterns.forEach(pattern =>
         md.use(Plugin(pattern.regex, pattern.modifier))
       );

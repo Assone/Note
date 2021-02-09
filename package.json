@@ -9,8 +9,14 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "lodash.debounce": "^4.0.8",
+    "@iktakahiro/markdown-it-katex": "^4.0.1",
+    "flowchart.js": "^1.15.0",
+    "markdown-it-footnote": "^3.0.2",
+    "markdown-it-ins": "^3.0.1",
+    "markdown-it-mark": "^3.0.1",
     "markdown-it-regexp": "^0.4.0",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
     "mermaid": "^8.9.0",
     "vitepress": "^0.11.5"
   }

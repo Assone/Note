@@ -1,8 +1,8 @@
 <template>
-  <a
+  <abbr
     :title="definition"
     :class="{ 'term-not-found': termNotFound, term: true }"
-    >{{ displayText }}</a
+    >{{ displayText }}</abbr
   >
 </template>
 
