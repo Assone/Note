@@ -1,5 +1,6 @@
 import DefaultTheme from 'vitepress/theme';
 
+import Badge from '../components/Badge.vue';
 import CodeGroup from '../components/CodeGroup.vue';
 import CodeGroupItem from '../components/CodeGroupItem.vue';
 import Glossary from '../components/Glossary.vue';
@@ -13,6 +14,7 @@ import 'katex/dist/katex.min.css';
 export default {
   ...DefaultTheme,
   enhanceApp({ app, router, siteData }) {
+    app.component('Badge', Badge);
     app.component('CodeGroup', CodeGroup);
     app.component('CodeGroupItem', CodeGroupItem);
     app.component('Glossary', Glossary);

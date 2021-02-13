@@ -27,9 +27,17 @@ module.exports = {
         .use(mermaid)
         .use(flowChart)
         .use(container);
+
       patterns.forEach(pattern =>
         md.use(Plugin(pattern.regex, pattern.modifier))
       );
+
+      const render = md.render;
+      md.render = function () {
+        return render
+          .apply(this, arguments)
+          .replace(/<span class="katex">/g, '<span v-pre class="katex">');
+      };
     },
   },
 
@@ -42,7 +50,7 @@ module.exports = {
     lastUpdated: 'Last Updated',
 
     nav: [
-      { text: 'Math', link: '/math', activeMatch: '^/math/' },
+      // { text: 'Math', link: '/math', activeMatch: '^/math/' },
       {
         text: 'Programing',
         link: '/programing/',
@@ -62,6 +70,10 @@ module.exports = {
             {
               text: 'what is c ?',
               link: '/programing/c/',
+            },
+            {
+              text: '数据类型',
+              link: '/programing/c/data-type',
             },
             {
               text: '函数',
