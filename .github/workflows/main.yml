@@ -28,9 +28,9 @@ jobs:
 
       # 部署到Github Pages
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
-          BASE_BRANCH: master
+          BASE_BRANCH: main
           SSH: true
           CLEAN: true
           BRANCH: gh-pages
