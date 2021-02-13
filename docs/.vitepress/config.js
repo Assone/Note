@@ -4,6 +4,7 @@ const { getGlossary } = require('./plugins/glossary-get');
  * @type {import('vitepress').UserConfig}
  */
 module.exports = {
+  base: '/note/',
   lang: 'zh-CN',
   title: '杉木的小破站',
   description: 'Be a student at ten times the speed.',
