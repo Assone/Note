@@ -10,14 +10,15 @@ module.exports = {
   description: 'Be a student at ten times the speed.',
 
   markdown: {
-    anchor: { permalink: false },
+    anchor: { permalink: true },
     lineNumbers: true,
+    extractHeaders: ['h2', 'h3', 'h4'],
     config: md => {
       const Plugin = require('markdown-it-regexp');
       const patterns = require('./plugins/glossary-patterns');
       const container = require('./plugins/container');
       const mermaid = require('./plugins/mermaid');
-      const flowChart = require('./plugins/flowChart');
+      const flowChart = require('./plugins/flow-chart');
 
       md.use(require('markdown-it-footnote'))
         .use(require('markdown-it-mark'))
@@ -43,7 +44,7 @@ module.exports = {
   },
 
   themeConfig: {
-    repo: 'assone/note',
+    repo: 'assone/Note',
     docsDir: 'docs',
 
     editLinks: true,
@@ -51,15 +52,11 @@ module.exports = {
     lastUpdated: 'Last Updated',
 
     nav: [
-      // { text: 'Math', link: '/math', activeMatch: '^/math/' },
+      { text: 'Math', link: '/math', activeMatch: '^/math/' },
       {
         text: 'Programing',
         link: '/programing/',
         activeMatch: '^/programing/',
-      },
-      {
-        text: 'Glossary',
-        link: '/GLOSSARY',
       },
     ],
 
@@ -75,6 +72,10 @@ module.exports = {
             {
               text: '数据类型',
               link: '/programing/c/data-type',
+            },
+            {
+              text: '运算符和表达式',
+              link: '/programing/c/operators-and-expressions',
             },
             {
               text: '函数',

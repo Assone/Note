@@ -945,11 +945,6 @@ fs-extra@^9.1.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
-fsevents@~2.1.2:
-  version "2.1.3"
-  resolved "https://registry.npm.taobao.org/fsevents/download/fsevents-2.1.3.tgz?cache=0&sync_timestamp=1612536512306&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffsevents%2Fdownload%2Ffsevents-2.1.3.tgz#fb738703ae8d2f9fe900c33836ddebee8b97f23e"
-  integrity sha1-+3OHA66NL5/pAMM4Nt3r7ouX8j4=
-
 fsevents@~2.3.1:
   version "2.3.2"
   resolved "https://registry.npm.taobao.org/fsevents/download/fsevents-2.3.2.tgz?cache=0&sync_timestamp=1612536512306&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffsevents%2Fdownload%2Ffsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
@@ -1601,10 +1596,10 @@ reusify@^1.0.4:
   resolved "https://registry.npm.taobao.org/reusify/download/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha1-kNo4Kx4SbvwCFG6QhFqI2xKSXXY=
 
-rollup@^2.35.1:
-  version "2.38.5"
-  resolved "https://registry.npm.taobao.org/rollup/download/rollup-2.38.5.tgz?cache=0&sync_timestamp=1612505332111&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frollup%2Fdownload%2Frollup-2.38.5.tgz#be41ad4fe0c103a8794377afceb5f22b8f603d6a"
-  integrity sha1-vkGtT+DBA6h5Q3evzrXyK49gPWo=
+rollup@^2.38.5:
+  version "2.39.0"
+  resolved "https://registry.npm.taobao.org/rollup/download/rollup-2.39.0.tgz?cache=0&sync_timestamp=1613146241972&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frollup%2Fdownload%2Frollup-2.39.0.tgz#be4f98c9e421793a8fec82c854fb567c35e22ab6"
+  integrity sha1-vk+YyeQheTqP7ILIVPtWfDXiKrY=
   optionalDependencies:
     fsevents "~2.3.1"
 
@@ -1821,22 +1816,22 @@ vary@~1.1.2:
   resolved "https://registry.npm.taobao.org/vary/download/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-vite@2.0.0-beta.50:
-  version "2.0.0-beta.50"
-  resolved "https://registry.npm.taobao.org/vite/download/vite-2.0.0-beta.50.tgz#04e66d009470ca90ab8a4a43687e899b670a0f25"
-  integrity sha1-BOZtAJRwypCrikpDaH6Jm2cKDyU=
+vite@^2.0.0-beta.70:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/vite/download/vite-2.0.1.tgz?cache=0&sync_timestamp=1613581513454&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvite%2Fdownload%2Fvite-2.0.1.tgz#348fc5c0de510aa90bd01ecf87df210ce741b38e"
+  integrity sha1-NI/FwN5RCqkL0B7Ph98hDOdBs44=
   dependencies:
     esbuild "^0.8.34"
     postcss "^8.2.1"
     resolve "^1.19.0"
-    rollup "^2.35.1"
+    rollup "^2.38.5"
   optionalDependencies:
-    fsevents "~2.1.2"
+    fsevents "~2.3.1"
 
-vitepress@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.npm.taobao.org/vitepress/download/vitepress-0.12.0.tgz#1dbb590a86da873dcd348550dcf56c840683ed71"
-  integrity sha1-HbtZCobahz3NNIVQ3PVshAaD7XE=
+vitepress@^0.12.2:
+  version "0.12.2"
+  resolved "https://registry.npm.taobao.org/vitepress/download/vitepress-0.12.2.tgz#5e53c78a3ca045f8513cd4bedf2e280f98d48f61"
+  integrity sha1-XlPHijygRfhRPNS+3y4oD5jUj2E=
   dependencies:
     "@docsearch/css" "^1.0.0-alpha.28"
     "@docsearch/js" "^1.0.0-alpha.28"
@@ -1863,7 +1858,7 @@ vitepress@^0.12.0:
     prismjs "^1.23.0"
     sirv "^1.0.11"
     slash "^3.0.0"
-    vite "2.0.0-beta.50"
+    vite "^2.0.0-beta.70"
     vue "^3.0.5"
 
 vue@^3.0.5:
