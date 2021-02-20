@@ -1,0 +1,1 @@
+import{o as n,c as a,d as e}from"./app.03d90df1.js";const s='{"title":"函数","description":"","frontmatter":{},"headers":[{"level":2,"title":"函数定义","slug":"函数定义"}],"relativePath":"programing/c/function.md","lastUpdated":1613793501932}',r={},t=e('',6);r.render=function(e,s,r,i,p,l){return n(),a("div",null,[t])};export default r;export{s as __pageData};
